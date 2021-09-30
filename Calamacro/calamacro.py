@@ -57,6 +57,10 @@ async def uptime(ctx, boss: str, dpm: float, ttk: float):
     if ('emp' in boss.lower() or 'cyg' in boss.lower()):
         empUptime = (27820/maxDPM)*100
         return await ctx.send('Uptime for Empress was: ' + "%.2f" % empUptime +'%')
+    
+    if ('v2' in boss.lower()):
+        v2Uptime = (17195/maxDPM)*100
+        return await ctx.send('Uptime for V2 was: ' + "%.2f" % v2Uptime +'%')
 
     if ('von' in boss.lower() or 'vl' in boss.lower()):
         vlUptime = (5250/maxDPM)*100
